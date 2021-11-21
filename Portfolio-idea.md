@@ -11,8 +11,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#projectRequirements">Project Setup Requirements</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -25,16 +24,16 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Project - Goals & Objectives
 
 ![image](https://user-images.githubusercontent.com/13203059/142774210-46a968f4-0374-4c18-9cbd-1be222095525.png)
 
 
 There are several applications that come in the intersection of Computer vision and Deep learning, one such popular application is - Identifying faces/facial features. In this project idea, I will be working on an image dataset particularly of popular celebrities around the world.
 
-This dataset is great for training and testing models for face detection, particularly for recognising facial attributes such as finding people with brown hair, are smiling, or wearing glasses. The dataset has diverse set of images when it comes to pose variation/background clutter/enthnicity. The dataset is also enriched with annotations.
+This dataset is great for training and testing models for face detection, particularly for recognising facial attributes such as finding people with brown hair, are smiling, or wearing glasses. The dataset has diverse set of images when it comes to pose variation/background clutter/enthnicity. The dataset is also enriched with annotations. The problems will be approached by means of employing Deep learning techniques like Convolutional Neural Networks(CNN) and/or GANs
 
-In this portfolio idea some of the tasks that can be acheived through this data are - 
+In this portfolio idea some of the objectives that can be acheived through this data are - 
 * Can the model be trained to detect particular facial attributes?
 * Which images contain people that are smiling?
 * Classifying people with different hair, say - Straight or wavy
@@ -64,3 +63,14 @@ The creators of this dataset wrote the following paper employing CelebA for face
 S. Yang, P. Luo, C. C. Loy, and X. Tang, "From Facial Parts Responses to Face Detection: A Deep Learning Approach", in IEEE International Conference on Computer Vision (ICCV), 2015
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Project Setup Requirements
+
+- Requirements: Discovery Cluster, Google Colab Notebook/Jupyter Notebook, Github
+- Data Source: Kaggle Dataset - ![CelebFaces Attributes (CelebA) Dataset](https://www.kaggle.com/jessicali9530/celeba-dataset)
