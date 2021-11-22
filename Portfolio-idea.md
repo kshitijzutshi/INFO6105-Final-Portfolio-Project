@@ -5,7 +5,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Data source">Where is the Data?</a></li>
+        <li><a href="#Data source">Data Source - Where is the Data?</a></li>
       </ul>
     </li>
     <li>
@@ -14,12 +14,12 @@
         <li><a href="#projectRequirements">Project Setup Requirements</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Problems to be addressed">Problems to be addressed</a></li>
+    <li><a href="#Potential pitfalls & challenges">Potential pitfalls & challenges</a></li>
+    <li><a href="#Background Research">Background Research</a></li>
+    <li><a href="#Algorithms and Code sources">Algorithms and Code sources</a></li>
+    <li><a href="#References">References</a></li>
+    <li><a href="#Project team members">Project team members</a></li>
   </ol>
 </details>
 
@@ -42,7 +42,7 @@ In this portfolio idea some of the objectives that can be acheived through this 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Where is the Data?
+## Data Source - Where is the Data?
 
 For this project the data will be sourced from a Kaggle dataset repository named - ![Intel Image Classification - Image Scene Classification of Multiclass](https://www.kaggle.com/puneet6060/intel-image-classification). This data was initially published on https://datahack.analyticsvidhya.com by Intel to host a Image classification Challenge.
 
@@ -65,26 +65,26 @@ Photo by Jan Böttinger on Unsplash
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Project Setup Requirements
+## Project Setup Requirements
 
 - Requirements: Discovery Cluster, Google Colab Notebook/Jupyter Notebook, Github
 - Data Source: Kaggle Dataset - ![Intel Image Classification - Image Scene Classification of Multiclass](https://www.kaggle.com/puneet6060/intel-image-classification)
 
 
 <!-- PROBLEMS TO BE ADDRESSED -->
-### Problems to be addressed
+## Problems to be addressed
 
 In this multiclass image classification problem, given that the CNN model would be trained on 6 or less pre-defined categories of scenes like - Buildings, forests, glaciers, mountain, sea and street. It is expected that the model is able to correctly classify new unseen real world images into one of the 6 categories its trained on.
 
 
-### Potential pitfalls & challenges
+## Potential pitfalls & challenges
 
 In this image classification problem there are several pitfalls/challenges, namely - 
 
 - The Input image dataset size is verry large 25000+ images, loading these images on currently available hardware would be an issue, the dataset size can be reduced by propotionately reducing the number of images of each class.
 - For the given 6 categories, training the model for all 6 classes will be computationally intensive, it could be reduced to say 3 or 4 categories.
 
-### Background Research
+## Background Research
 
 For the background research I will be skimming through relevant GitHub repositories and also look at these published papers that are relevant to CNN - 
 
@@ -92,7 +92,7 @@ For the background research I will be skimming through relevant GitHub repositor
     Adit Deshpande, 2016, The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)
     C.-C. Jay Kuo, 2016, Understanding Convolutional Neural Networks with A Mathematical Model
 
-### Algorithms and Code sources
+## Algorithms and Code sources
 
 In using Keras deep learning models, in the process of building the model for image classification I will be looking at the following techniques - 
 
@@ -121,7 +121,7 @@ Momentum
 
 
 
-### References
+## References
 
 Yann LeCun et al., 1998, ![Gradient-Based Learning Applied to Document Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
 
@@ -139,6 +139,6 @@ https://www.youtube.com/watch?v=ycxulUVoNbk
 https://keras.io/losses/
 
 
-### Project team members
+## Project team members
 
 Kshitij Zutshi
