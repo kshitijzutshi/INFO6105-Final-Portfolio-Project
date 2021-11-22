@@ -48,8 +48,8 @@ For this project the data will be sourced from a Kaggle dataset repository named
 
 About the dataset - 
 
-In total, the Dataset has 25000 images of size 150 x 150 distributed under 6 categories.
-There are about 14000 images in Train, 3000 images in test and 7000 in prediction.
+In total, the Dataset has **25000** images of size 150 x 150 distributed under **6** categories.
+There are about **14000** images in **Train**, **3000** images in **test** and **7000** in **prediction**.
 
 Acknowledgment
 
@@ -89,14 +89,16 @@ In this image classification problem there are several pitfalls/challenges, name
 For the background research I will be skimming through relevant GitHub repositories and also look at these published papers that are relevant to CNN - 
 
     Yann LeCun et al., 1998, Gradient-Based Learning Applied to Document Recognition
+    
     Adit Deshpande, 2016, The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)
+    
     C.-C. Jay Kuo, 2016, Understanding Convolutional Neural Networks with A Mathematical Model
 
 ## Algorithms and Code sources
 
 In using Keras deep learning models, in the process of building the model for image classification I will be looking at the following techniques - 
 
-- Usages of Activation functions like - Rectified linear unit (ReLU)
+- **Usages of Activation functions** - Rectified linear unit (ReLU)
 TanH
 Leaky rectified linear unit (Leaky ReLU)
 Parameteric rectified linear unit (PReLU) Randomized leaky rectified linear unit (RReLU)
@@ -105,13 +107,13 @@ Scaled exponential linear unit (SELU)
 S-shaped rectified linear activation unit (SReLU)
 Adaptive piecewise linear (APL)
 
-- Usages of different types of cost functions like - Quadratic cost (mean-square error)
+- **Usages of different types of cost functions** - Quadratic cost (mean-square error)
 Cross-Entropy
 Hinge
 Kullback–Leibler divergence
 Cosine Proximity
 
-- Usages of different gradient estimations like - Stochastic Gradient Descent
+- **Usages of different gradient estimations** - Stochastic Gradient Descent
 Adagrad
 RMSProp
 ADAMN
