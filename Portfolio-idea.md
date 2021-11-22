@@ -3,23 +3,23 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#abouttheproject">About The Project</a>
       <ul>
-        <li><a href="#Data source">Data Source - Where is the Data?</a></li>
+        <li><a href="#Datasource">Data Source - Where is the Data?</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#gettingstarted">Getting Started</a>
       <ul>
         <li><a href="#projectRequirements">Project Setup Requirements</a></li>
       </ul>
     </li>
-    <li><a href="#Problems to be addressed">Problems to be addressed</a></li>
-    <li><a href="#Potential pitfalls & challenges">Potential pitfalls & challenges</a></li>
-    <li><a href="#Background Research">Background Research</a></li>
-    <li><a href="#Algorithms and Code sources">Algorithms and Code sources</a></li>
+    <li><a href="#Problemstobeaddressed">Problems to be addressed</a></li>
+    <li><a href="#Potentialpitfalls&challenges">Potential pitfalls & challenges</a></li>
+    <li><a href="#BackgroundResearch">Background Research</a></li>
+    <li><a href="#AlgorithmsandCodesources">Algorithms and Code sources</a></li>
     <li><a href="#References">References</a></li>
-    <li><a href="#Project team members">Project team members</a></li>
+    <li><a href="#Projectteammembers">Project team members</a></li>
   </ol>
 </details>
 
