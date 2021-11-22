@@ -3,23 +3,23 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#abouttheproject">About The Project</a>
+      <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#Datasource">Data Source - Where is the Data?</a></li>
+        <li><a href="#data-source">Data Source - Where is the Data?</a></li>
       </ul>
     </li>
     <li>
-      <a href="#gettingstarted">Getting Started</a>
+      <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#projectRequirements">Project Setup Requirements</a></li>
+        <li><a href="#project-requirements">Project Setup Requirements</a></li>
       </ul>
     </li>
-    <li><a href="#Problemstobeaddressed">Problems to be addressed</a></li>
-    <li><a href="#Potentialpitfalls&challenges">Potential pitfalls & challenges</a></li>
-    <li><a href="#BackgroundResearch">Background Research</a></li>
-    <li><a href="#AlgorithmsandCodesources">Algorithms and Code sources</a></li>
-    <li><a href="#References">References</a></li>
-    <li><a href="#Projectteammembers">Project team members</a></li>
+    <li><a href="#problems-to-be-addressed">Problems to be addressed</a></li>
+    <li><a href="#potential-pitfalls-challenges">Potential pitfalls & challenges</a></li>
+    <li><a href="#background-research">Background Research</a></li>
+    <li><a href="#algorithms-and-code-sources">Algorithms and Code sources</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#project-team-members">Project team members</a></li>
   </ol>
 </details>
 
