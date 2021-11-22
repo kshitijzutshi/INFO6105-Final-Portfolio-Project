@@ -32,7 +32,7 @@
 
 There are several applications that come in the intersection of Computer vision and Deep learning, one such popular application is - Identifying image Scene features. In this project idea, I will be working on an image dataset particularly containing a set of common scenic objects like - Buildings, forests, glaciers, mountain, sea and street.
 
-This dataset is great for training and testing models for scene classification of multiclass.The dataset has diverse set of images when it comes to pose variation/background clutter/noise. The dataset is also enriched with annotations. The problems will be approached by means of employing Deep learning techniques like Convolutional Neural Networks(CNN).
+This dataset is great for training and testing models for scene classification of multiclass.The dataset has diverse set of images when it comes to pose variation/background clutter/noise. The problems will be approached by means of employing Deep learning techniques like Convolutional Neural Networks(CNN).
 
 In this portfolio idea some of the objectives that can be acheived through this data are - 
 * Can the model be trained to detect one of the six classes of scene objects?
