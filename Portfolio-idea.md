@@ -79,6 +79,7 @@ In this image classification problem there are several pitfalls/challenges, name
 
 - The Input image dataset size is verry large 25000+ images, loading these images on currently available hardware would be an issue, the dataset size can be reduced by propotionately reducing the number of images of each class.
 - For the given 6 categories, training the model for all 6 classes will be computationally intensive, it could be reduced to say 3 or 4 categories.
+- Creating a Python flask based frontend application where user can drag n drop/upload an image and image gets classified in one of 6 categories.
 
 ## Background Research
 
