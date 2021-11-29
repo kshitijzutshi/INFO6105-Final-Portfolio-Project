@@ -1,42 +1,43 @@
+# Image Segmentation using PSPNet and UNet
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#abouttheproject">About The Project</a>
       <ul>
-        <li><a href="#data-source">Data Source - Where is the Data?</a></li>
+        <li><a href="#Datasource">Data Source - Where is the Data?</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#gettingstarted">Getting Started</a>
       <ul>
-        <li><a href="#project-requirements">Project Setup Requirements</a></li>
+        <li><a href="#projectRequirements">Project Setup Requirements</a></li>
       </ul>
     </li>
-    <li><a href="#problems-to-be-addressed">Problems to be addressed</a></li>
-    <li><a href="#potential-pitfalls-challenges">Potential pitfalls & challenges</a></li>
-    <li><a href="#background-research">Background Research</a></li>
-    <li><a href="#algorithms-and-code-sources">Algorithms and Code sources</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#project-team-members">Project team members</a></li>
+    <li><a href="#Problemstobeaddressed">Problems to be addressed</a></li>
+    <li><a href="#Potentialpitfalls&challenges">Potential pitfalls & challenges</a></li>
+    <li><a href="#BackgroundResearch">Background Research</a></li>
+    <li><a href="#AlgorithmsandCodesources">Algorithms and Code sources</a></li>
+    <li><a href="#References">References</a></li>
+    <li><a href="#Projectteammembers">Project team members</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project - Goals & Objectives
 
-![jan-bottinger-27xFENkt-lc-unsplash](https://user-images.githubusercontent.com/13203059/142784115-65d7f85a-8e1e-4a1e-bee2-84178fbbdc48.jpg)
+![image](https://user-images.githubusercontent.com/13203059/143803576-fe94be69-001e-41ab-a44c-acb72aee54cd.png)
 
 
 
-There are several applications that come in the intersection of Computer vision and Deep learning, one such popular application is - Identifying image Scene features. In this project idea, I will be working on an image dataset particularly containing a set of common scenic objects like - Buildings, forests, glaciers, mountain, sea and street.
+There are several applications that come in the intersection of Computer vision and Deep learning, one such popular application is - Semantic Segmentation in Images. In this project idea, I will be working on an image dataset particularly containing Cars.
 
-This dataset is great for training and testing models for scene classification of multiclass.The dataset has diverse set of images when it comes to pose variation/background clutter/noise. The problems will be approached by means of employing Deep learning techniques like Convolutional Neural Networks(CNN).
+This dataset is great for training and testing models for image segmenatation with applications in autonomous driving and also driver assist.The dataset has diverse set of images when it comes to pose variation/background clutter/noise.The problems will be approached by means of employing image segmenation models like Pyramid Scene Parsing Network(PSPNet) and UNet and using Convolutional Neural Network(CNN)
 
 In this portfolio idea some of the objectives that can be acheived through this data are - 
-* Can the model be trained to detect one of the six classes of scene objects?
-* Comparing the results using different keras models
+* Can the model be trained to detect and isolate/segment objects in the frame
+* Comparing the results of the two segmentation models
 
 
 
@@ -44,78 +45,67 @@ In this portfolio idea some of the objectives that can be acheived through this 
 
 ## Data Source - Where is the Data?
 
-For this project the data will be sourced from a Kaggle dataset repository named - ![Intel Image Classification - Image Scene Classification of Multiclass](https://www.kaggle.com/puneet6060/intel-image-classification). This data was initially published on https://datahack.analyticsvidhya.com by Intel to host a Image classification Challenge.
+For this project the data will be sourced from a Kaggle dataset repository named - ![Cityscapes Image Pairs-
+Semantic Segmentation for Improving Automated Driving](https://www.kaggle.com/dansbecker/cityscapes-image-pairs).
 
 About the dataset - 
 
-In total, the Dataset has **25000** images of size 150 x 150 distributed under **6** categories.
-There are about **14000** images in **Train**, **3000** images in **test** and **7000** in **prediction**.
+ The dataset has still images from the original videos, and the semantic segmentation labels are shown in images alongside the original image. This is one of the best datasets around for semantic segmentation tasks.
+ 
+ This dataset has **2975 training images files** and **500 validation image** files. **Each image file is 256x512 pixels**, and each file is a composite with the original photo on the left half of the image, alongside the labeled image (output of semantic segmentation) on the right half.
 
 Acknowledgment
 
-Thanks to https://datahack.analyticsvidhya.com for the challenge and Intel for the Data
-
-Photo by Jan Böttinger on Unsplash
+This dataset is the same as what is available ![here](https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets/) from the Berkeley AI Research group.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
 ## Project Setup Requirements
 
 - Requirements: Discovery Cluster, Google Colab Notebook/Jupyter Notebook, Github
-- Data Source: Kaggle Dataset - ![Intel Image Classification - Image Scene Classification of Multiclass](https://www.kaggle.com/puneet6060/intel-image-classification)
+- Data Source: Kaggle Dataset - ![Cityscapes Image Pairs-
+Semantic Segmentation for Improving Automated Driving](https://www.kaggle.com/dansbecker/cityscapes-image-pairs)
 
 
 <!-- PROBLEMS TO BE ADDRESSED -->
 ## Problems to be addressed
 
-In this multiclass image classification problem, given that the CNN model would be trained on 6 or less pre-defined categories of scenes like - Buildings, forests, glaciers, mountain, sea and street. It is expected that the model is able to correctly classify new unseen real world images into one of the 6 categories its trained on.
+For the given dataset of Cars in traffic, using PSPNet and UNet we need to create image segmemtation of the original image, the segmented image gives us a sense of where the objects are in the image. This has particular application autonomous driving to detect neighbouring cars/traffic/pedestrians and navigate accordingly.
 
 
 ## Potential pitfalls & challenges
 
-In this image classification problem there are several pitfalls/challenges, namely - 
+In this image segmentation problem there are several pitfalls/challenges, namely - 
 
-- The Input image dataset size is verry large 25000+ images, loading these images on currently available hardware would be an issue, the dataset size can be reduced by propotionately reducing the number of images of each class.
-- For the given 6 categories, training the model for all 6 classes will be computationally intensive, it could be reduced to say 3 or 4 categories.
-- Creating a Python flask based frontend application where user can drag n drop/upload an image and image gets classified in one of 6 categories.
+- For the dataset, producing the segmented image in prediction as close to training data is a challenge. 
+- In order to get good results the model training will be computationally expensive and time consuming if done on limited resources.
 
 ## Background Research
 
-For the background research I will be skimming through relevant GitHub repositories and also look at these published papers that are relevant to CNN - 
+For the background research I will be skimming through relevant GitHub repositories and also look at these published papers that are relevant to image segmentation - 
 
-    Yann LeCun et al., 1998, Gradient-Based Learning Applied to Document Recognition
-    
-    Adit Deshpande, 2016, The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)
-    
-    C.-C. Jay Kuo, 2016, Understanding Convolutional Neural Networks with A Mathematical Model
+    https://arxiv.org/abs/1505.04597 
+	
+    https://www.depends-on-the-definition.com/unet-keras-segmenting-images/ 
+	
+    https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0 
+	
+	https://www.analyticsvidhya.com/blog/2019/04/introduction-image-segmentation-techniques-python/
 
 ## Algorithms and Code sources
 
-In using Keras deep learning models, in the process of building the model for image classification I will be looking at the following techniques - 
+In using Keras deep learning models, in the process of building the model for image segmentation I will be looking at the following techniques - 
 
-- **Usages of Activation functions** - Rectified linear unit (ReLU)
-TanH
-Leaky rectified linear unit (Leaky ReLU)
-Parameteric rectified linear unit (PReLU) Randomized leaky rectified linear unit (RReLU)
-Exponential linear unit (ELU)
-Scaled exponential linear unit (SELU)
-S-shaped rectified linear activation unit (SReLU)
-Adaptive piecewise linear (APL)
+PSPNet and implementation in Keras
 
-- **Usages of different types of cost functions** - Quadratic cost (mean-square error)
-Cross-Entropy
-Hinge
-Kullback–Leibler divergence
-Cosine Proximity
+solve the Semantic Segmentation problem using Fully Convolutional Network (FCN) called UNET
 
-- **Usages of different gradient estimations** - Stochastic Gradient Descent
-Adagrad
-RMSProp
-ADAMN
-AGAdadelta
-Momentum
 
 
 
@@ -127,6 +117,14 @@ Yann LeCun et al., 1998, ![Gradient-Based Learning Applied to Document Recogniti
 Adit Deshpande, 2016, ![The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
 
 C.-C. Jay Kuo, 2016, ![Understanding Convolutional Neural Networks with A Mathematical Model](https://arxiv.org/pdf/1609.04112.pdf)
+
+https://arxiv.org/abs/1505.04597 
+	
+https://www.depends-on-the-definition.com/unet-keras-segmenting-images/ 
+	
+https://towardsdatascience.com/up-sampling-with-transposed-convolution-9ae4f2df52d0 
+	
+https://www.analyticsvidhya.com/blog/2019/04/introduction-image-segmentation-techniques-python/
 
 PyTorch & TensorBoard
 https://www.youtube.com/watch?v=pSexXMdruFM
