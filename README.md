@@ -1,8 +1,8 @@
-### Project portfolio Idea  
+# Project portfolio Idea  
 
-Topic - CelebFaces Attributes (CelebA)
+## Cityscapes Image Pairs - Semantic Segmentation for Improving Automated Driving
 
-Link for dataset - https://www.kaggle.com/jessicali9530/celeba-dataset
+### Link for dataset - https://www.kaggle.com/dansbecker/cityscapes-image-pairs
 
 
 Questions to answer - 
